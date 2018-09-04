@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    networks:
+      - demo.net
+
+  product:
+    build: ./product
+    container_name: product
+    ports:
+      - 8080:8080
+    networks:
+      - demo.net
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo/demodb
+    depends_on:
+      - mongo
+
+networks:
+    demo.net:

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Implementation-Title: gs-accessing-data-mongodb
+Implementation-Version: 0.1.0
+Archiver-Version: Plexus Archiver
+Built-By: khongks
+Implementation-Vendor-Id: org.springframework
+Spring-Boot-Version: 1.5.10.RELEASE
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: hello.Application
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_141
+Implementation-URL: http://projects.spring.io/spring-boot/gs-accessing
+ -data-mongodb/
+
